@@ -9,7 +9,7 @@
 <h2>Available albums</h2>
 {% for album in albums_disponibles %}
     <div class="album">
-        <p>{{ album.title }}</p>
+        <p><a href="{% url 'select' album.id %}", name="Select album">{{ album.title }}</a></p>
     </div>
 {% endfor %}
 </body>

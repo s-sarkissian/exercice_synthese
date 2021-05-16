@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracks</title>
+</head>
+<body>
+<h1>You selected album {{ albums.title }}</h1>
+<table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Milliseconds</th>
+        <th>Price</th>
+    </tr>
+    {% for track in tracks %}
+    <div class="track">
+        <tr>
+            <th>track.name</th>
+            <th>track.milliseconds</th>
+            <th>track.unitPrice</th>
+        </tr>
+    </div>
+    {% endfor %}
+</table>
+</body>
+</html>
