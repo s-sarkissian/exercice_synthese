@@ -6,22 +6,11 @@
 </head>
 <body>
 <h1>Welcome on the chinook track database</h1>
-
-<table style="width:100%">
-  <tr>
-    <th>id</th>
-    <th>Title</th>
-    <th>artist_id</th>
-  </tr>
-    {% for album in albums %}
+<h2>Available albums</h2>
+{% for album in albums_disponibles %}
     <div class="album">
-        <tr>
-            <td>{{ album.id }}</td>
-            <td>{{ album.title }}</td>
-        </tr>
+        <p>{{ album.title }}</p>
     </div>
-    {% endfor %}
-
-</table>
+{% endfor %}
 </body>
 </html>
